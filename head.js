@@ -8,6 +8,6 @@ const assertEqual = (actual, expected) => {
 
 const head = (arr) => {
   return arr.shift();
-}
+};
 
-assertEqual(head([]), 5);
+assertEqual(head([5, 6, 7]), 5);
