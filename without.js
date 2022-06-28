@@ -7,7 +7,6 @@ let eqArrays = (arr1, arr2) => {
   return true;
 };
 
-
 let assertArraysEqual = (arr1, arr2) => {
   if (eqArrays(arr1, arr2)) {
     console.log(`✅✅✅ Assertion Passed! Array: ${arr1} === ${arr2}`);
@@ -16,4 +15,12 @@ let assertArraysEqual = (arr1, arr2) => {
   }
 };
 
-assertArraysEqual([1,2,3,4],[1,2,3,4]);
+let without = (arr, removeArr) => {
+  const arrWithout = [];
+  for (let i = 0; i<arr.length; i++) {
+    if (!removeArr.includes(arr[i])) {
+      arrWithout.push(arr[i]);
+    }
+  }
+  return arrWithout;
+}
