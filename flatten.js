@@ -27,5 +27,3 @@ let flatten = (arr) => {
   }
   return flattenedArr;
 }
-
-assertArraysEqual(flatten([1,[2,3]]), [1,2,3])

@@ -23,4 +23,6 @@ let without = (arr, removeArr) => {
     }
   }
   return arrWithout;
-}
+};
+
+console.log(without([1,2,3],[1,2]))
